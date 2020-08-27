@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movies from "./Movies.js";
+import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +24,6 @@ class App extends React.Component {
       movies: movies,
       loading: false,
     });
-    console.log(movies);
   };
 
   componentDidMount() {
@@ -36,7 +36,7 @@ class App extends React.Component {
       <section>
         <li className="movies">
           {loading ? (
-            <div className="loading">Loading</div>
+            <div className="loading">Loading...</div>
           ) : (
             movies.map((data) => {
               return (

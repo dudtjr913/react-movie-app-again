@@ -5,12 +5,13 @@ import "./Movies.css";
 export default function Movies({ title, year, summary, rating, img, genres }) {
   return (
     <ul className="movie">
+      <img className="movie__img" src={img} alt={title} title={title} />;
       <h2 className="movie__title">{title}</h2>
       <h4 className="movie__year">{year}</h4>
       <h4 className="movie__rating">{rating} / 10</h4>
-      <img className="movie__img" src={img} alt={title} title={title} />
-      <h5 className="movie__summary">{summary.slice(0, 250)}</h5>
+      <h5 className="movie__summary">{summary.slice(0, 250)}...</h5>
       <ul className="movie__genres">
+        Genre :
         {genres.map((genre) => {
           return <li className="genres__genre">{genre}</li>;
         })}

@@ -1,6 +1,22 @@
-* {
-  list-style: none;
+.movie {
+  width: 45%;
+}
+.movie__title,
+.movie__year,
+.movie__rating,
+.movie__img,
+.movie__summary,
+.movie__genres {
+  margin-bottom: 10px;
+}
+
+.movie__genres {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.genres__genre {
   margin: 0px;
-  padding: 0px;
-  margin-left: 2px;
+  margin-left: 10px;
 }
