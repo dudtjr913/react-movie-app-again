@@ -1,0 +1,20 @@
+.detail {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.detail__ul {
+  display: flex;
+  justify-content: center;
+}
+.detail__li {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.detail__summary {
+  width: 50vw;
+}
